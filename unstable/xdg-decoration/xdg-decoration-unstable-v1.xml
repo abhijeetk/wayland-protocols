@@ -100,11 +100,17 @@
     <enum name="mode">
       <description summary="window decoration modes">
         These values describe window decoration modes.
+
+	Custom-decoration mode:
+	This decoration mode provides support to client-side window decorations
+	and server-side window shadows.
       </description>
       <entry name="client_side" value="1"
         summary="no server-side window decoration"/>
       <entry name="server_side" value="2"
         summary="server-side window decoration"/>
+      <entry name="custom" value="3"
+        summary="combination of client-side and server-side decoration"/>
     </enum>
 
     <request name="set_mode">
